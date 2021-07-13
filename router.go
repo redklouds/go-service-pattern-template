@@ -25,7 +25,7 @@ func (router *Router) InitRouter() *chi.Mux {
 
 	//Route Group
 	r.Route("/api", func(r chi.Router) {
-		r.Get("/WeatherForecast", WeatherController.GetWeatherForecast)
+		r.Get("/weatherforecast", WeatherController.GetWeatherForecast)
 	})
 	return r
 }
